@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/wyy/Projects/SkipList/build",
+  "command": "/usr/bin/clang++-18   -g -std=gnu++17 -o CMakeFiles/SkipList.dir/main.cpp.o -c /home/wyy/Projects/SkipList/main.cpp",
+  "file": "/home/wyy/Projects/SkipList/main.cpp"
+}
+]

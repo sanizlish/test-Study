@@ -1,0 +1,3 @@
+/home/wyy/Projects/SkipList/build/CMakeFiles/SkipList.dir
+/home/wyy/Projects/SkipList/build/CMakeFiles/edit_cache.dir
+/home/wyy/Projects/SkipList/build/CMakeFiles/rebuild_cache.dir
