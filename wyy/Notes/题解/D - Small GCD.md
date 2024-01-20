@@ -2,16 +2,18 @@ https://codeforces.com/contest/1900/problem/D
 
 前置知识
 容斥原理
-设$$1 \leq x, y \leq N$$, f(k) 代表最大公约数为k的有序数对(x, y)的个数，求f(1)到f(N)的值
+设$1 \leq x, y \leq N$, f(k) 代表最大公约数为k的有序数对(x, y)的个数，求f(1)到f(N)的值
 容斥原理来考虑，先求出以k为公约数的数对，再剔除所有以k的倍数为公约数的数对（不重复），剩下的就是以k为最大公约数的数对。即：
 $$f(k) = 以k为公约数的数对 - 以k的倍数为公约数的数对个数(不重复)$$
 以k的倍数为公约数的数对个数(不重复数对) = 所有以k的倍数为最大公约数的数对之和。
 $$f(k) = \lfloor \cfrac{N}{k}\rfloor ^2 - \sum_{i=2}^{i\times k\leq N} f(i \times k)$$
-这里的$$\lfloor \cfrac{N}{k}\rfloor$$，小于等于N中能被k整除的个数，数对中(x, y)，x和y都能选这么多个，所以有$$\lfloor \cfrac{N}{k}\rfloor ^2$$个数对以k为公约数
+这里的 $\lfloor \cfrac{N}{k}\rfloor$，小于等于N中能被k整除的个数，数对中(x, y)，x和y都能选这么多个，所以有$\lfloor \cfrac{N}{k}\rfloor ^2$个数对以k为公约数
+```c++
 for (long long k = N; k >= 1; k--) {
   f[k] = (N / k) * (N / k);
   for (long long i = k + k; i <= N; i += k) f[k] -= f[i];
 }
+```
 欧拉反演
 所有能整除n的数的欧拉函数之和等于n
 $$N = \sum_{d|n}\phi{(d)}$$
