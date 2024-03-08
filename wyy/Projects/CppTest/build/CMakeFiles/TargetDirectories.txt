@@ -1,0 +1,3 @@
+/home/wyy/test-Study/wyy/Projects/CppTest/build/CMakeFiles/CppTest.dir
+/home/wyy/test-Study/wyy/Projects/CppTest/build/CMakeFiles/edit_cache.dir
+/home/wyy/test-Study/wyy/Projects/CppTest/build/CMakeFiles/rebuild_cache.dir
